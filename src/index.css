@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 220 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 15%;
+
+    --primary: 215 80% 52%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 94%;
+    --secondary-foreground: 220 15% 20%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 215 80% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 90%;
+    --input: 220 13% 90%;
+    --ring: 215 80% 52%;
+
+    --radius: 0.5rem;
+
+    /* Graph tokens */
+    --graph-bg: 210 20% 98%;
+    --graph-node: 215 80% 52%;
+    --graph-node-secondary: 350 65% 55%;
+    --graph-edge: 215 40% 78%;
+    --graph-edge-highlight: 215 80% 52%;
+
+    /* Chat tokens */
+    --chat-bg: 0 0% 100%;
+    --chat-user-bg: 215 80% 52%;
+    --chat-user-fg: 0 0% 100%;
+    --chat-agent-bg: 220 14% 96%;
+    --chat-agent-fg: 220 15% 15%;
+    --chat-status: 152 60% 45%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 224 20% 8%;
+    --foreground: 210 20% 92%;
+    --card: 224 18% 12%;
+    --card-foreground: 210 20% 92%;
+    --popover: 224 18% 12%;
+    --popover-foreground: 210 20% 92%;
+    --primary: 215 80% 58%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 224 14% 18%;
+    --secondary-foreground: 210 20% 92%;
+    --muted: 224 14% 18%;
+    --muted-foreground: 215 12% 58%;
+    --accent: 215 80% 58%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 224 14% 20%;
+    --input: 224 14% 20%;
+    --ring: 215 80% 58%;
+    --graph-bg: 224 20% 6%;
+    --graph-node: 215 80% 58%;
+    --graph-node-secondary: 350 65% 60%;
+    --graph-edge: 215 25% 30%;
+    --graph-edge-highlight: 215 80% 58%;
+    --chat-bg: 224 18% 12%;
+    --chat-user-bg: 215 80% 58%;
+    --chat-user-fg: 0 0% 100%;
+    --chat-agent-bg: 224 14% 18%;
+    --chat-agent-fg: 210 20% 92%;
+    --chat-status: 152 60% 50%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
